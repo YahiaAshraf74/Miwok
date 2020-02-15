@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTextViewNumbers">#fd8e09</color>
+    <color name="colorTextViewFamilyMembers">#379237</color>
+    <color name="colorTextViewColors">#8800a0</color>
+    <color name="colorTextViewPhrases">#16afca</color>
+    <color name="colorBackground">#fff7da</color>
+    <color name="colorTextContent">#ffffff</color>
+    <color name="colorStatusBar">#2f1d1a</color>
+    <color name="colorActionBar">#4a312a</color>
+    <color name="colorImageBackground">#fff7da</color>
+</resources>
