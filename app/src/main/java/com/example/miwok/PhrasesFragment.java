@@ -23,6 +23,9 @@ public class PhrasesFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static PhrasesFragment getInstance() {
+        return new PhrasesFragment();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -38,6 +41,6 @@ public class PhrasesFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        //adapter.releaseMediaPlayer();
+        adapter.releaseMediaPlayer();
     }
 }

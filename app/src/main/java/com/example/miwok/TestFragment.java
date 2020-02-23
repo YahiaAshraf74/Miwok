@@ -17,15 +17,16 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class TestFragment extends Fragment {
-
     public TestFragment() {
         // Required empty public constructor
     }
 
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_test, container, false);
+    public static TestFragment getInstance() {
+        return new TestFragment();
     }
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_test, container, false);
+    }
 }

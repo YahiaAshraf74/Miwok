@@ -10,4 +10,5 @@
     <color name="colorStatusBar">#2f1d1a</color>
     <color name="colorActionBar">#4a312a</color>
     <color name="colorImageBackground">#fff7da</color>
+    <color name="colorTabLayoutText">#a8a19e</color>
 </resources>

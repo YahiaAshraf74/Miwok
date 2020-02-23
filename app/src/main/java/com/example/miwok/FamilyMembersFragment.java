@@ -23,9 +23,12 @@ public class FamilyMembersFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static FamilyMembersFragment getInstance() {
+        return new FamilyMembersFragment();
+    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_family_members, container, false);
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view_family_members);
         adapter = new RecyclerViewAdapter(getActivity(), R.color.colorTextViewFamilyMembers, DummyDate.miwokWordFamilyMembers, DummyDate.defaultWordFamilyMembers, DummyDate.audioFamilyMembers, DummyDate.imageFamilyMembers);

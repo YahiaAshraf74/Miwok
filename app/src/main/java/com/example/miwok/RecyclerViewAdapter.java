@@ -104,7 +104,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }
     }
 
-
     public class ViewHolder extends RecyclerView.ViewHolder {
         private RelativeLayout relativeLayout;
         private CircleImageView circleImageView;
@@ -133,6 +132,5 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public TextView getDefaultWord() {
             return defaultWord;
         }
-
     }
 }

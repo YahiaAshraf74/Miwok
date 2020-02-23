@@ -23,6 +23,9 @@ public class ColorsFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static ColorsFragment getInstance() {
+        return new ColorsFragment();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

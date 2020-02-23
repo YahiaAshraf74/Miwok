@@ -3,7 +3,6 @@ package com.example.miwok;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -13,14 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class MainActivity extends AppCompatActivity {
+    public static final String KEY_POSITION = "com.example.miwok.KEY_POSITION";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,21 +36,27 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (parent.getItemAtPosition(position).toString()) {
-                    case "Numbers":
-                        startActivity(new Intent(MainActivity.this, NumbersActivity.class));
+                Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+                switch (position) {
+                    case 0:
+                        intent.putExtra(KEY_POSITION, 0);
+                        startActivity(intent);
                         break;
-                    case "Family Members":
-                        startActivity(new Intent(MainActivity.this, FamilyMembersActivity.class));
+                    case 1:
+                        intent.putExtra(KEY_POSITION, 1);
+                        startActivity(intent);
                         break;
-                    case "Colors":
-                        startActivity(new Intent(MainActivity.this, ColorsActivity.class));
+                    case 2:
+                        intent.putExtra(KEY_POSITION, 2);
+                        startActivity(intent);
                         break;
-                    case "Phrases":
-                        startActivity(new Intent(MainActivity.this, PhrasesActivity.class));
+                    case 3:
+                        intent.putExtra(KEY_POSITION, 3);
+                        startActivity(intent);
                         break;
                     default:
-                        startActivity(new Intent(MainActivity.this, TestActivity.class));
+                        intent.putExtra(KEY_POSITION, 4);
+                        startActivity(intent);
                         break;
                 }
             }

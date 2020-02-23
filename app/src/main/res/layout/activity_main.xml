@@ -6,5 +6,8 @@
     android:background="@color/colorBackground"
     android:divider="@null"
     android:dividerHeight="0dp">
-
+    <!--<androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
 </ListView>
